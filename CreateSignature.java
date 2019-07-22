@@ -14,7 +14,7 @@ import org.apache.commons.codec.binary.Hex;
 public class CreateSignature {
 
 	private static String entity_digest = "";
-	private static String key = "L1gGied7a538JDCvtNx2q6Mpy30b2OTbNCrmxCw5Zw8XlJmWpaq8TXfmqWgornSXZE4RwkzCznrYb01gKhzkLXurainuB0bba9Pz";
+	private static String key = "somekey";
 	private static String body="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><optin-request><country>NL</country><merchant-id>gc_badoo</merchant-id><merchant-request-id>1</merchant-request-id><msisdn>14155551234</msisdn><optin-type>otp</optin-type><otp><network mcc=\"204\" mnc=\"08\" name=\"KPN Telecom\" /></otp></optin-request>";
 	private static String messageToSign = "POST /optin/3.0/optin\n" + 
 			"Content-Type: application/xml; charset=UTF-8\n" + 
